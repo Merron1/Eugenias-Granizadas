@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granizadas Eugenias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>¡Granizadas Eugenias!</h1>
+        <p>Tu dosis perfecta de frescura y sabor</p>
+        <p class="slogan">100% PURA FRUTA</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sabores">Nuestros Sabores</a></li>
+            <li><a href="#personaliza">Personaliza la Tuya</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>El paraíso de las granizadas te espera</h2>
+                <p>Descubre combinaciones únicas y refrescantes que te harán volver por más.</p>
+                <button id="orderButton">¡Pide la tuya ya!</button>
+            </div>
+        </section>
+
+        <section id="sabores" class="flavor-gallery">
+            <h2>Nuestros Sabores Estrella</h2>
+            <p class="slogan-secondary">¡Elaboradas con 100% pura fruta para un sabor inigualable!</p>
+            <div class="flavor-grid">
+                <div class="flavor-card">
+                    <img src="images/granizada_fresa.jpg" alt="Granizada de Fresa">
+                    <h3>Fresa Explosiva</h3>
+                    <p>Clásica y deliciosa, con el dulzor natural de la fresa.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/granizada_limon.jpg" alt="Granizada de Limón">
+                    <h3>Limón Ácido</h3>
+                    <p>Un toque cítrico y refrescante para los amantes del agridulce.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="images/granizada_mora.jpg" alt="Granizada de Mora">
+                    <h3>Mora Silvestre</h3>
+                    <p>Exótica y llena de sabor, una experiencia diferente.</p>
+                </div>
+            </div>
+
+            <div class="price-list-container">
+                <h3>Nuestros Sabores y Precios</h3>
+                <ul class="price-list">
+                    <li>
+                        <span>Mora</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Fresa</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Mango</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Camote</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Limón</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Salada</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Hawaiiana</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Tamarindo</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                    <li>
+                        <span>Piña</span>
+                        <span class="prices">Q10 <small>(12 oz.)</small> / Q12 <small>(16 oz.)</small></span>
+                    </li>
+                </ul>
+                <p class="call-to-action-prices">¡Pide tu favorita hoy mismo!</p>
+            </div>
+        </section>
+
+        <section id="personaliza" class="customize-section">
+            <h2>¡Crea tu Granizada Perfecta!</h2>
+            <div class="customize-options">
+                <div class="option-group">
+                    <h3>1. Elige tus Bases</h3>
+                    <p>Base Principal:</p>
+                    <select id="baseSelect1">
+                        <option value="mora">Mora</option>
+                        <option value="fresa">Fresa</option>
+                        <option value="mango">Mango</option>
+                        <option value="camote">Camote</option>
+                        <option value="limon">Limón</option>
+                        <option value="salada">Salada</option>
+                        <option value="hawaiiana">Hawaiiana</option>
+                        <option value="tamarindo">Tamarindo</option>
+                        <option value="piña">Piña</option>
+                    </select>
+                    <p style="margin-top: 1em;">Base Secundaria (Opcional):</p>
+                    <select id="baseSelect2">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="mora">Mora</option>
+                        <option value="fresa">Fresa</option>
+                        <option value="mango">Mango</option>
+                        <option value="camote">Camote</option>
+                        <option value="limon">Limón</option>
+                        <option value="salada">Salada</option>
+                        <option value="hawaiiana">Hawaiiana</option>
+                        <option value="tamarindo">Tamarindo</option>
+                        <option value="piña">Piña</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <h3>2. Elige el Tamaño</h3>
+                    <select id="sizeSelect">
+                        <option value="12oz">12 oz. (Q10)</option>
+                        <option value="16oz">16 oz. (Q12)</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <h3>3. Añade Toppings (Q2 c/u)</h3>
+                    <div class="topping-options-grid">
+                        <input type="checkbox" id="toppingMora" value="Mora">
+                        <label for="toppingMora">Mora</label>
+                        <input type="checkbox" id="toppingFresa" value="Fresa">
+                        <label for="toppingFresa">Fresa</label>
+                        <input type="checkbox" id="toppingMango" value="Mango">
+                        <label for="toppingMango">Mango</label>
+                        <input type="checkbox" id="toppingCamote" value="Camote">
+                        <label for="toppingCamote">Camote</label>
+                        <input type="checkbox" id="toppingLimon" value="Limón">
+                        <label for="toppingLimon">Limón</label>
+                        <input type="checkbox" id="toppingSalada" value="Salada">
+                        <label for="toppingSalada">Salada</label>
+                        <input type="checkbox" id="toppingHawaiiana" value="Hawaiiana">
+                        <label for="toppingHawaiiana">Hawaiiana</label>
+                        <input type="checkbox" id="toppingTamarindo" value="Tamarindo">
+                        <label for="toppingTamarindo">Tamarindo</label>
+                        <input type="checkbox" id="toppingPina" value="Piña">
+                        <label for="toppingPina">Piña</label>
+
+                        <input type="checkbox" id="toppingChamoy" value="Chamoy">
+                        <label for="toppingChamoy">Chamoy</label>
+                        <input type="checkbox" id="toppingTajin" value="Tajín">
+                        <label for="toppingTajin">Tajín</label>
+                        <input type="checkbox" id="toppingLecheCondensada" value="Leche Condensada">
+                        <label for="toppingLecheCondensada">Leche Condensada</label>
+                    </div>
+                </div>
+                <div class="option-group">
+                    <h3>4. Tu Granizada:</h3>
+                    <p id="customSummary">Elige tus opciones para ver tu granizada aquí.</p>
+                    <p class="final-price">Precio Total Estimado: <span id="granizadaPrice">Q10.00</span></p>
+                    <p class="price-note">Todos los toppings tienen un costo adicional de Q2 c/u.</p>
+                </div>
+            </div>
+            <button id="buildGranizada">¡Arma mi Granizada!</button>
+            </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>¡Contáctanos!</h2>
+            <p>¿Tienes alguna pregunta o quieres hacer un pedido especial?</p>
+            <p class="phone-number">Llámanos o envíanos un mensaje a: <strong>3692-2955</strong></p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" rows="5"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <p class="whatsapp-prompt">También puedes hacer tu pedido directamente por WhatsApp al <a href="https://wa.me/50236922955" target="_blank">3692-2955</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Granizadas Eugenias. Todos los derechos reservados.</p>
+        <p>Pedidos y Consultas: <strong>3692-2955</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
