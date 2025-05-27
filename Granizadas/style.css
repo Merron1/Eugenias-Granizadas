@@ -1,0 +1,649 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #FF6B6B; /* Rojo Coral */
+    --secondary-color: #4ECDC4; /* Turquesa */
+    --accent-color: #FFE66D; /* Amarillo Brillante */
+    --text-color: #333;
+    --light-text-color: #f4f4f4;
+    --background-light: #f9f9f9;
+    --background-dark: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text-color);
+    padding: 2.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0;
+    opacity: 0.9;
+}
+
+/* Nuevo estilo para el eslogan en el encabezado */
+header .slogan {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--accent-color); /* Amarillo brillante */
+    letter-spacing: 2px;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+/* Navegación */
+nav {
+    background-color: var(--background-dark);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Secciones generales */
+section {
+    padding: 4em 5%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8em;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+#hero {
+    /* Reemplaza con una imagen de fondo atractiva, si no tienes una, placeholder es útil */
+    background: url('https://via.placeholder.com/1500x600/4ECDC4/FFFFFF?text=Granizada+Refrescante') no-repeat center center/cover;
+    color: var(--light-text-color);
+    padding: 8em 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+#hero h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: var(--accent-color);
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+#orderButton { /* Usé el ID del botón directamente para mayor especificidad */
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1.2em 2.5em;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#orderButton:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #FFD700; /* Un amarillo ligeramente más oscuro al pasar el ratón */
+}
+
+/* Flavor Gallery */
+.flavor-gallery {
+    background-color: var(--background-light);
+    padding: 4em 5%;
+}
+
+/* Eslogan secundario en la sección de sabores */
+.slogan-secondary {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 2em;
+}
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5em;
+    margin-top: 3em;
+}
+
+.flavor-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    padding-bottom: 1.5em;
+}
+
+.flavor-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.flavor-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.flavor-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: 1em 1em 0.5em;
+}
+
+.flavor-card p {
+    color: var(--text-color);
+    font-size: 1.1em;
+    padding: 0 1em 1em;
+}
+
+/* Lista de precios */
+.price-list-container {
+    background-color: white;
+    margin: 4em auto 2em;
+    padding: 3em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+}
+
+.price-list-container h3 {
+    font-family: 'Pacifico', cursive;
+    color: var(--secondary-color); /* Turquesa */
+    font-size: 2.2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.8em 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price-list li span:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.price-list li .prices {
+    font-weight: 700;
+    color: var(--secondary-color);
+    white-space: nowrap; /* Evita que los precios se rompan en dos líneas */
+}
+
+.price-list li .prices small {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #666;
+    margin-left: 0.5em;
+}
+
+.call-to-action-prices {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-top: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Customize Section */
+.customize-section {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    color: var(--light-text-color);
+    padding: 5em 5%;
+}
+
+.customize-section h2 {
+    color: var(--accent-color);
+}
+
+.customize-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.option-group {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: var(--text-color);
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.option-group h3 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+/* Espacio entre los párrafos de bases y los selectores */
+.option-group p {
+    margin-bottom: 0.5em;
+    margin-top: 1em; /* Ajustado para la segunda base */
+    color: var(--text-color); /* Asegura que el texto sea visible */
+    font-weight: bold;
+}
+
+.option-group p:first-of-type {
+    margin-top: 0; /* Resetea el margen superior del primer párrafo */
+}
+
+
+/* Selector de tamaño y base */
+.option-group select {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    appearance: none; /* Eliminar el estilo por defecto del select */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13%205.7L146.2%20202.7%2018.6%2075.1a17.6%2017.6%200%200%200-25.3%2023.3l137.9%20138c3.2%203.2%207.1%204.7%2011.1%204.7s7.9-1.5%2011.1-4.7l137.9-138c18.4-18.4%205-47.8-23.3-47.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+
+
+/* --- ESTILOS MEJORADOS PARA CHECKBOXES --- */
+
+/* Estilos base para todos los checkboxes en los grupos de opciones */
+.option-group input[type="checkbox"] {
+    /* Reset de apariencia del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Dimensiones y visualización del cuadrado */
+    width: 24px; /* Un poco más grandes para mejor clic y visibilidad */
+    height: 24px;
+    border: 2px solid var(--primary-color); /* Color del borde del checkbox */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    background-color: white; /* Fondo del cuadrado */
+    cursor: pointer;
+    vertical-align: middle; /* Alinea con el texto del label */
+    margin-right: 0.8em; /* Espacio a la derecha del checkbox */
+    position: relative; /* Necesario para posicionar el checkmark */
+    flex-shrink: 0; /* Evita que el checkbox se encoja en flexbox */
+    outline: none; /* Elimina el contorno al hacer focus, si no quieres */
+    transition: all 0.2s ease-in-out; /* Transición suave para los cambios visuales */
+}
+
+/* Estilo cuando el checkbox está marcado */
+.option-group input[type="checkbox"]:checked {
+    background-color: var(--primary-color); /* Fondo cuando marcado */
+    border-color: var(--primary-color); /* Borde cuando marcado */
+}
+
+/* El 'checkmark' visual dentro del checkbox */
+.option-group input[type="checkbox"]:checked::after {
+    content: '✔'; /* Símbolo de verificación Unicode */
+    font-family: 'Roboto', sans-serif; /* Asegura que la fuente cargue el símbolo */
+    color: white; /* Color del símbolo */
+    font-size: 16px; /* Tamaño del símbolo */
+    font-weight: bold; /* Para que el símbolo se vea más claro */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el símbolo perfectamente */
+    line-height: 1; /* Evita espacio extra vertical */
+}
+
+/* Estilos para el label asociado al checkbox */
+.option-group input[type="checkbox"] + label {
+    display: inline-flex; /* Usa flexbox para alinear el checkbox y el texto */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-size: 1.1em; /* Un poco más grande para mejor legibilidad */
+    color: var(--text-color); /* Color del texto del label */
+    cursor: pointer;
+    margin-bottom: 0.8em; /* Espacio entre los elementos de la lista */
+    padding-left: 0.5em; /* Pequeño padding si necesitas más espacio */
+    white-space: nowrap; /* Evita que el texto del label se rompa en varias líneas */
+}
+
+/* Ajustes para el contenedor de la cuadrícula de toppings */
+.topping-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Ajustado min-width */
+    gap: 1em; /* Un poco más de espacio */
+    margin-top: 1em;
+}
+
+/* Estilo para el texto de toppings gratis (AHORA SERÁ "Q2 c/u" en HTML) */
+.free-toppings { /* Se mantiene la clase por si se usa en otro lugar o para futuras modificaciones */
+    color: var(--secondary-color); /* Turquesa */
+    font-weight: bold;
+}
+
+/* --- FIN ESTILOS MEJORADOS PARA CHECKBOXES --- */
+
+
+#customSummary {
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* Estilo para el precio final */
+.final-price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--secondary-color); /* Turquesa para el precio */
+    margin-top: 1em;
+}
+
+#granizadaPrice {
+    font-family: 'Pacifico', cursive; /* Para que el precio destaque */
+    font-size: 1.2em;
+    color: var(--primary-color); /* Rojo Coral para el valor numérico */
+}
+
+.price-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+}
+
+/* Botones de personalización (Ahora solo "Arma mi Granizada") */
+#buildGranizada { /* Solo queda este botón */
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1.2em 2.5em;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2em;
+    /* Centrar el botón si está solo */
+    display: inline-block; /* O block y margin: 2em auto; si quieres que ocupe toda la línea */
+}
+
+#buildGranizada:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #FFD700;
+}
+
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--background-light);
+    padding: 4em 5%;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 2em auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-section button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.2em 2.5em;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section button[type="submit"]:hover {
+    background-color: #E63946; /* Un rojo más oscuro al pasar el ratón */
+    transform: translateY(-3px);
+}
+
+/* Estilo para el número de teléfono en contacto */
+.phone-number {
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.phone-number strong {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    display: block; /* Para que aparezca en su propia línea si es muy largo */
+    margin-top: 0.5em;
+}
+
+.whatsapp-prompt {
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.whatsapp-prompt a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-prompt a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.flavor-card, .option-group, .price-list-container { /* Añadido .price-list-container para animación */
+    animation: fadeIn 0.8s ease-out backwards;
+}
+
+.flavor-card:nth-child(1) { animation-delay: 0.1s; }
+.flavor-card:nth-child(2) { animation-delay: 0.2s; }
+.flavor-card:nth-child(3) { animation-delay: 0.3s; }
+/* Añade más retrasos si tienes más tarjetas */
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    #hero h2 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    nav a {
+        padding: 0.8em;
+    }
+
+    .flavor-grid, .customize-options {
+        grid-template-columns: 1fr;
+    }
+
+    .option-group {
+        width: 90%;
+        max-width: none;
+    }
+
+    .price-list-container {
+        padding: 2em;
+    }
+    .price-list li {
+        flex-direction: column; /* Apila nombre y precios en pantallas pequeñas */
+        align-items: flex-start;
+    }
+    .price-list li .prices {
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    #orderButton, #buildGranizada, .contact-section button[type="submit"] {
+        padding: 1em 2em;
+        font-size: 1.1em;
+        /* margin-left: 0.5em; No es necesario si es un solo botón centrado */
+        /* margin-right: 0.5em; */
+        display: block; /* Para que ocupe todo el ancho disponible y se centre */
+        width: calc(100% - 2em);
+        margin: 1em auto;
+    }
+
+    section {
+        padding: 3em 5%;
+    }
+
+    .phone-number {
+        font-size: 1.3em;
+    }
+}
